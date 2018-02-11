@@ -1,0 +1,181 @@
+﻿
+@{
+    ViewBag.Title = "Detail";
+    Layout = "~/Views/Shared/_Layoutuser.cshtml";
+}
+
+<div class="account-dashboard">
+    <h4 class="account-dashboard__title">
+        Reviews Dashboard                <a class="account-dashboard__link-edit account-dashboard__link-edit_float_right" href="https://www.lazada.vn/customer/reviews/">
+            Xem thêm
+        </a>
+    </h4>
+    <div class="account-dashboard__content">
+        <div class="c-my-review-dashboard" data-qaa="c-my-review-dashboard">
+            <ul class="c-my-review-dashboard__list" data-qaa="c-my-review-dashboard__list">
+                <li class="c-my-review-dashboard__item " data-qaa="c-my-review-dashboard__item">
+                    <div class="c-my-review-progress" data-qaa="c-my-review-progress">
+                        <div class="c-my-review-progress__cell" data-qaa="c-my-review-progress__cell">
+                            <span class="c-my-review-progress__number" data-qaa="c-my-review-progress__number">
+                                0
+                            </span>
+                        </div>
+                        <div class="c-my-review-progress__cell" data-qaa="c-my-review-progress__cell">
+                            <span class="c-my-review-progress__text" data-qaa="c-my-review-progress__text">
+                                Products Reviewed
+                            </span>
+                        </div>
+                        <div class="c-my-review-progress__cell" data-qaa="c-my-review-progress__cell">
+                            <span class="c-progress-bar c-progress-bar_theme_my-review c-progress-bar_js_inited" data-qaa="c-progress-bar">
+                                <span class="c-progress-bar__completed" style="width: 0%;" data-qaa="c-progress-bar__completed"></span>
+                            </span>
+                        </div>
+                    </div>
+                </li>
+                <li class="c-my-review-dashboard__item " data-qaa="c-my-review-dashboard__item">
+                    <div class="c-my-review-progress" data-qaa="c-my-review-progress">
+                        <div class="c-my-review-progress__cell" data-qaa="c-my-review-progress__cell">
+                            <span class="c-my-review-progress__number" data-qaa="c-my-review-progress__number">
+                                0
+                            </span>
+                        </div>
+                        <div class="c-my-review-progress__cell" data-qaa="c-my-review-progress__cell">
+                            <span class="c-my-review-progress__text" data-qaa="c-my-review-progress__text">
+                                Sellers Reviewed
+                            </span>
+                        </div>
+                        <div class="c-my-review-progress__cell" data-qaa="c-my-review-progress__cell">
+                            <span class="c-progress-bar c-progress-bar_theme_my-review c-progress-bar_js_inited" data-qaa="c-progress-bar">
+                                <span class="c-progress-bar__completed" style="width: 0%;" data-qaa="c-progress-bar__completed"></span>
+                            </span>
+                        </div>
+                    </div>
+                </li>
+            </ul>
+        </div>
+    </div>
+</div>
+<h2 class="account-structure-page__title">
+    Account Dashboard
+</h2>
+<div class="account-dashboard js-account-dashboard">
+    <div class="account-dashboard__boxes-row">
+        <div class="account-dashboard__box account-dashboard__box_first">
+            <div class="account-dashboard__box-content">
+                <h4 class="account-dashboard__box-title">
+                    Personal Information
+                </h4>
+                <p class="account-dashboard__box-info">
+                    Tai Nguyen
+                    <br> nguoikhivohinh@gmail.com
+                </p>
+                <p class="account-dashboard__box-info">
+                    Newsletter Subscription: <a class="account-dashboard__link-edit js-newsletter-ajax tracking_dashboard_newsletter_ON" data-current-subscription="" href="https://www.lazada.vn/customer/newsletter/manage/">
+                        ON
+                    </a>
+                </p>
+                <p class="account-dashboard__box-info">
+                    <a class="account-dashboard__link-edit" href="https://www.lazada.vn/customer/account/changeemail/">Change email</a>
+                    <br>
+                    <a class="account-dashboard__link-edit" href="https://www.lazada.vn/customer/account/changepass/">Thay đổi mật khẩu</a>
+                </p>
+            </div>
+            <div class="account-dashboard__box-edit">
+                <a class="account-dashboard__link-edit" href="https://www.lazada.vn/customer/account/edit/">
+                    Chỉnh sửa
+                </a>
+            </div>
+        </div>
+        <div class="account-dashboard__box">
+            <div class="account-dashboard__box-content">
+                <h4 class="account-dashboard__box-title">
+                    Địa chỉ nhận hàng mặc định
+                </h4>
+                <p class="account-dashboard__box-info">
+                    Nguyễn Đình Tài
+                    <br> Số 56 Đường 3122 Phạm Thế Hiển
+                    <br> Hồ Chí Minh, Quận 8, Phường 7
+                    <br>01648469817
+                </p>
+            </div>
+            <div class="account-dashboard__box-edit">
+                <a class="account-dashboard__link-edit" href="https://www.lazada.vn/customer/address/edit/?address_id=7767445&amp;updateAddress=shipping&amp;dashboard=1">
+                    Chỉnh sửa
+                </a>
+            </div>
+        </div>
+        <div class="account-dashboard__box">
+            <div class="account-dashboard__box-content">
+                <h4 class="account-dashboard__box-title">
+                    Địa chỉ thanh toán mặc định
+                </h4>
+                <p class="account-dashboard__box-info">
+                    Nguyễn Đình Tài
+                    <br> Số 56 Đường 3122 Phạm Thế Hiển
+                    <br> Hồ Chí Minh, Quận 8, Phường 7
+                    <br>01648469817
+                </p>
+            </div>
+            <div class="account-dashboard__box-edit">
+                <a class="account-dashboard__link-edit" href="https://www.lazada.vn/customer/address/edit/?address_id=7767445&amp;updateAddress=billing&amp;dashboard=1">
+                    Chỉnh sửa
+                </a>
+            </div>
+        </div>
+        <div class="clearfix"></div>
+    </div>
+    <div class="account-dashboard__recent-orders recent-orders">
+        <h4 class="recent-orders__title">
+            Recent Orders
+        </h4>
+        <div class="recent-orders__table">
+            <div class="recent-orders__table-row recent-orders__table-row-header">
+                <div class="recent-orders__table-cell">Mã đơn hàng</div>
+                <div class="recent-orders__table-cell">Ngày đặt hàng</div>
+                <div class="recent-orders__table-cell">Thành tiền</div>
+                <div class="recent-orders__table-cell">Tình trạng</div>
+            </div>
+            <div class="recent-orders__table-row">
+                <div class="recent-orders__table-cell">
+                    <a class="tracking_dashboard_ordernum" href="https://www.lazada.vn/customer/order/view/?orderNr=365315361">365315361</a>
+                </div>
+                <div class="recent-orders__table-cell">
+                    12/12/2017
+                </div>
+                <div class="recent-orders__table-cell">
+                    646.000 VND
+                </div>
+                <div class="recent-orders__table-cell">
+                    <div class="item-status item-status-closed">
+                        Đã đóng
+                    </div>
+                </div>
+                <div class="recent-orders__table-cell item-buttons-container">
+                    <a class="item-button tracking_dashboard_trackshipment" href="https://www.lazada.vn/index/viewOrderTracking/?orderNr=365315361#1">Theo dõi đơn hàng</a>
+                    <a></a>
+                </div>
+            </div>
+            <div class="recent-orders__table-row">
+                <div class="recent-orders__table-cell">
+                    <a class="tracking_dashboard_ordernum" href="https://www.lazada.vn/customer/order/view/?orderNr=381255361">381255361</a>
+                </div>
+                <div class="recent-orders__table-cell">
+                    12/12/2017
+                </div>
+                <div class="recent-orders__table-cell">
+                    680.000 VND
+                </div>
+                <div class="recent-orders__table-cell">
+                    <div class="item-status item-status-canceled">
+                        Từ chối
+                    </div>
+                </div>
+                <div class="recent-orders__table-cell item-buttons-container">
+                    <a class="item-button tracking_dashboard_trackshipment" href="https://www.lazada.vn/index/viewOrderTracking/?orderNr=381255361#1">Theo dõi đơn hàng</a>
+                    <a></a>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+

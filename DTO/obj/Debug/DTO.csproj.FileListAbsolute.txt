@@ -2,4 +2,8 @@ C:\Users\KAKA\Desktop\WebAppITStar\DTO\bin\Debug\DTO.dll
 C:\Users\KAKA\Desktop\WebAppITStar\DTO\bin\Debug\DTO.pdb
 C:\Users\KAKA\Desktop\WebAppITStar\DTO\obj\Debug\DTO.dll
 C:\Users\KAKA\Desktop\WebAppITStar\DTO\obj\Debug\DTO.pdb
-C:\Users\KAKA\Desktop\WebAppITStar\DTO\obj\Debug\DTO.csprojResolveAssemblyReference.cache
+C:\Users\11122\Downloads\WebAppITStar\WebAppITStar\DTO\bin\Debug\DTO.dll
+C:\Users\11122\Downloads\WebAppITStar\WebAppITStar\DTO\bin\Debug\DTO.pdb
+C:\Users\11122\Downloads\WebAppITStar\WebAppITStar\DTO\obj\Debug\DTO.csprojResolveAssemblyReference.cache
+C:\Users\11122\Downloads\WebAppITStar\WebAppITStar\DTO\obj\Debug\DTO.dll
+C:\Users\11122\Downloads\WebAppITStar\WebAppITStar\DTO\obj\Debug\DTO.pdb

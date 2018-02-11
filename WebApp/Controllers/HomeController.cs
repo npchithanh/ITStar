@@ -1,18 +1,14 @@
 ﻿using DTO;
 using System.Web.Mvc;
 using System.Collections.Generic;
-using System.Web;
 
 namespace WebApp.Controllers
 {
-
     public class HomeController : BaseController
     {
-        [Authorized(Roles = "admin")]
         // GET: Home
-        public ActionResult Index(HttpPostedFileBase file)
+        public ActionResult Index()
         {
-            file.ContentType
             return View();
         }
         [ChildActionOnly]

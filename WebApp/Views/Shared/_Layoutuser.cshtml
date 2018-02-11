@@ -1,0 +1,134 @@
+﻿<!DOCTYPE html>
+<html lang="">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <!-- <meta name="viewport" content="width=device-width, initial-scale=1"> -->
+    <title>Title Page</title>
+    <link href="~/Content/bootstrap/css/bootstrap.css" rel="stylesheet" />
+    <link href="~/Content/font-awesome/css/font-awesome.min.css" rel="stylesheet" />
+    <link href="~/Content/css/style.css" rel="stylesheet" />
+
+
+    <script src="~/Content/bootstrap/js/jquery-2.1.4.min.js"></script>
+    <script src="~/Content/bootstrap/js/bootstrap.js"></script>
+    <script src="~/Content/bootstrap/js/scroll.js"></script>
+    <script src="~/Scripts/myjs.js"></script>
+    <link href="~/Content/Csslayoutuser/alice-min-bundle-common.css" rel="stylesheet" />
+    <link href="~/Content/Csslayoutuser/alice-min-bundle-customer.css" rel="stylesheet" />
+    <link href="~/Content/Csslayoutuser/component-account.css" rel="stylesheet" />
+</head>
+<body>
+   @Html.Partial("Header")
+    <div class="account-structure-page">
+        <div class="account-structure-page__left-sidebar">
+            <div class="my-account-menu">
+                <h6 class="my-account-menu__user-name">
+                    Tai Nguyen
+                </h6>
+                <div class="my-account-menu__list">
+                    <ul class="my-account-menu__group">
+                        <li class="my-account-menu__item  my-account-menu__item_first" >
+                            <a class="my-account-menu__link    my-account-menu__link_state_active" href="https://www.lazada.vn/customer/account/index" title="Account Dashboard">
+                                Account Dashboard
+                            </a>
+                        </li>
+
+                        <li class="my-account-menu__item ">
+                            <a class="my-account-menu__link
+                            " href="https://www.lazada.vn/customer/order/index" title="Orders">
+                                Orders
+                            </a>
+                        </li>
+
+                        <li class="my-account-menu__item " data-spm-anchor-id="a2o4n.customer.0.i2.460e62b4kGKnZy">
+                            <a class="my-account-menu__link
+                            " href="https://www.lazada.vn/customer/wishlist/index" title="Wishlists">
+                                Wishlists
+                            </a>
+                        </li>
+
+                        <li class="my-account-menu__item ">
+                            <a class="my-account-menu__link
+                            " href="https://www.lazada.vn/customer/reviews" title="My Reviews">
+                                My Reviews
+                            </a>
+                        </li>
+
+                        <li class="my-account-menu__item ">
+                            <a class="my-account-menu__link
+                            " href="https://www.lazada.vn/customer/returns/index" title="Trả hàng">
+                                Trả hàng
+                            </a>
+                        </li>
+
+                        <li class="my-account-menu__item ">
+                            <a class="my-account-menu__link
+                            " href="https://www.lazada.vn/customer/cancellations/index" title="Cancellations">
+                                Cancellations
+                            </a>
+                        </li>
+
+                        <li class="my-account-menu__item ">
+                            <a class="my-account-menu__link
+                            " href="https://www.lazada.vn/customer/payment/manage" title="Phương thức thanh toán">
+                                Phương thức thanh toán
+                            </a>
+                        </li>
+
+                        <li class="my-account-menu__item ">
+                            <a class="my-account-menu__link
+                            " href="https://www.lazada.vn/customer/account/edit" title="Personal Information">
+                                Personal Information
+                            </a>
+                        </li>
+
+                        <li class="my-account-menu__item ">
+                            <a class="my-account-menu__link
+                            " href="https://www.lazada.vn/customer/address/index" title="Address Book">
+                                Address Book
+                            </a>
+                        </li>
+
+                        <li class="my-account-menu__item ">
+                            <a class="my-account-menu__link
+                            " href="https://www.lazada.vn/customer/coupon/index" title="Vouchers">
+                                Vouchers
+                            </a>
+                        </li>
+
+                        <li class="my-account-menu__item ">
+                            <a class="my-account-menu__link
+                            " href="https://www.lazada.vn/customer/invitation/index" title="Invitations">
+                                Invitations
+                            </a>
+                        </li>
+
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="account-structure-page__main-content">
+            @RenderBody()
+        </div>
+    </div>
+ 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    @Html.Partial("Footer")
+
+</body>
+</html>

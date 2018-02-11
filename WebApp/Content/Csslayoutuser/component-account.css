@@ -1,0 +1,256 @@
+.c-my-review-dashboard {
+    background-color: #FFF;
+
+}
+.c-my-review-dashboard__list {
+    display: table;
+    width: 100%;
+
+}
+.c-my-review-dashboard__item {
+    display: table-cell;
+    width: 50%;
+    vertical-align: middle;
+    text-align: center;
+
+}
+.c-my-review-dashboard__item:first-child {
+    border-right: 1px solid #F1F1F1;
+
+}
+.c-my-review-dashboard__item_name_helpfulness {
+    border-left: 1px solid #F1F1F1;
+
+}
+.c-my-review-dashboard__item_cell_1of3 {
+    width: 33.33%;
+
+}
+@media (max-width: 1199px) {
+    .c-my-review-dashboard__item_cell_1of3 .progress__bar {
+        width: 120px;
+
+    }
+
+}
+.c-my-review-progress {
+    display: table;
+    font-weight: 300;
+    margin: 0 auto;
+    padding: 8px 0;
+}
+.c-my-review-progress__cell {
+    display: table-cell;
+    vertical-align: middle;
+    text-align: left;
+}
+.c-my-review-progress__number {
+    font-size: 30px;
+    line-height: 40px;
+    color: #181818;
+    padding-right: 13px;
+}
+.c-my-review-progress__text {
+    font-size: 14px;
+    line-height: 17px;
+    padding-right: 16px;
+    color: #202020;
+    display: block;
+    width: 80px;
+    box-sizing: border-box;
+}
+/* Layout Sizes */
+/* Colors */
+/* Fonts */
+/* Width */
+/* Media */
+/* Controls */
+/* Clearfix */
+/* Inline-block */
+/* Opacity for nice transition */
+/* Clearfix */
+
+/* Inline-block */
+
+/* Opacity for nice transition */
+
+:root {
+    /* Basic */
+    --black: #000;
+    --white: #fff;
+
+    --grey100: #fafafa;
+    --grey200: #f1f1f1;
+    --grey300: #e8e8e8;
+    --grey500: #dadada;
+    --grey600: #808080;
+    --grey900: #202020;
+
+    --red500: #d2232a;
+    --red600: #c33543;
+
+    --orange10: #fef1e8;
+    --orange100: #f8b68e;
+    --orange500: #f57224;
+    --orange600: #ea6516;
+    --orange700: #d4550a;
+
+    --yellow500: #faca51;
+    --yellow550: #fffbef;
+
+    --green500: #9aa438;
+    --green600: #9ca73b;
+    --green800: #718a23;
+    --greenA200: #478500;
+
+    --blue50: #f0feff;
+    --blue300: #9ed6e1;
+    --blue400: #8dcedb;
+    --blue500: #1a9cb7;
+    --blue600: #1692ac;
+    --blue700: #0f7d94;
+    --blueA700: #183545;
+    --blue30a2: rgba(98, 117, 133, 0.2);
+
+    --facebook: #3b5999;
+
+    --purple100: #f4f8ff;
+
+    /* Shadows */
+    --shadow100: rgba(0, 0, 0, 0.14);
+}
+.c-progress-bar_theme_orange {
+    display: inline-block;
+    width: 150px;
+    height: 12px;
+    line-height: 12px;
+    background-color: #f1f1f1;
+}
+.c-progress-bar_theme_orange .c-progress-bar__completed {
+    display: inline-block;
+    height: 100%;
+    background-color: #faca51;
+}
+.c-progress-bar_theme_my-review {
+    display: inline-block;
+    width: 160px;
+    height: 14px;
+    line-height: 14px;
+    background-color: #dadada;
+}
+.c-progress-bar_theme_my-review .c-progress-bar__completed {
+    display: inline-block;
+    height: 100%;
+    background-color: #9ca73b;
+    transition: all 1000ms cubic-bezier(0.600, 0.040, 0.980, 0.335);
+    transition-timing-function: cubic-bezier(0.600, 0.040, 0.980, 0.335);
+}
+.c-progress-bar_size_large {
+    display: block;
+    width: 530px;
+    margin: 0 auto;
+}
+/* Layout Sizes */
+/* Colors */
+/* Fonts */
+/* Width */
+/* Media */
+/* Controls */
+/* Clearfix */
+/* Inline-block */
+/* Opacity for nice transition */
+:root {
+    /* Basic */
+    --black: #000;
+    --white: #fff;
+
+    --grey100: #fafafa;
+    --grey200: #f1f1f1;
+    --grey300: #e8e8e8;
+    --grey500: #dadada;
+    --grey600: #808080;
+    --grey900: #202020;
+
+    --red500: #d2232a;
+    --red600: #c33543;
+
+    --orange10: #fef1e8;
+    --orange100: #f8b68e;
+    --orange500: #f57224;
+    --orange600: #ea6516;
+    --orange700: #d4550a;
+
+    --yellow500: #faca51;
+    --yellow550: #fffbef;
+
+    --green500: #9aa438;
+    --green600: #9ca73b;
+    --green800: #718a23;
+    --greenA200: #478500;
+
+    --blue50: #f0feff;
+    --blue300: #9ed6e1;
+    --blue400: #8dcedb;
+    --blue500: #1a9cb7;
+    --blue600: #1692ac;
+    --blue700: #0f7d94;
+    --blueA700: #183545;
+    --blue30a2: rgba(98, 117, 133, 0.2);
+
+    --facebook: #3b5999;
+
+    --purple100: #f4f8ff;
+
+    /* Shadows */
+    --shadow100: rgba(0, 0, 0, 0.14);
+}
+.c-my-review-helpfulness {
+    display: table;
+    font-size: 12px;
+    font-weight: 300;
+    line-height: 16px;
+    color: #808080;
+}
+.c-my-review-helpfulness__icon-wrapper {
+    display: table-cell;
+    vertical-align: middle;
+}
+.c-my-review-helpfulness__icon-up {
+    margin: -2px 5px 0 0;
+}
+.c-my-review-helpfulness__icon-up_type_small-grey {
+    display: inline-block;
+    background: url(data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0iVVRGLTgiIHN0YW5kYWxvbmU9Im5vIj8+Cjxzdmcgd2lkdGg9IjE2cHgiIGhlaWdodD0iMTZweCIgdmlld0JveD0iMCAwIDE2IDE0IiB2ZXJzaW9uPSIxLjEiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgeG1sbnM6eGxpbms9Imh0dHA6Ly93d3cudzMub3JnLzE5OTkveGxpbmsiPgogICAgPCEtLSBHZW5lcmF0b3I6IFNrZXRjaCAzLjguMyAoMjk4MDIpIC0gaHR0cDovL3d3dy5ib2hlbWlhbmNvZGluZy5jb20vc2tldGNoIC0tPgogICAgPHRpdGxlPnJldmlldy1oZWxwZnVsbmVzcy10aHVtYnMtdXA8L3RpdGxlPgogICAgPGRlc2M+Q3JlYXRlZCB3aXRoIFNrZXRjaC48L2Rlc2M+CiAgICA8ZGVmcz48L2RlZnM+CiAgICA8ZyBpZD0iUGFnZS0xIiBzdHJva2U9Im5vbmUiIHN0cm9rZS13aWR0aD0iMSIgZmlsbD0ibm9uZSIgZmlsbC1ydWxlPSJldmVub2RkIj4KICAgICAgICA8ZyBpZD0icmV2aWV3LWhlbHBmdWxuZXNzLXRodW1icy11cCI+CiAgICAgICAgICAgIDxnIGlkPSJtdGhlbWUiPgogICAgICAgICAgICAgICAgPGcgaWQ9IjEuMi1yZXZpZXctcGFnZS1yYXRlZC1oZWxwZnVsIj4KICAgICAgICAgICAgICAgICAgICA8ZyBpZD0iR3JvdXAtMiI+CiAgICAgICAgICAgICAgICAgICAgICAgIDxnIGlkPSJHcm91cCI+CiAgICAgICAgICAgICAgICAgICAgICAgICAgICA8ZyBpZD0iR3JvdXAtMyI+CiAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgPGcgaWQ9ImljX2hlbHBmdWxfYWN0aXZlIj4KICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgPHBvbHlnb24gaWQ9IlNoYXBlIiBwb2ludHM9IjAgMCAxNiAwIDE2IDE2IDAgMTYiPjwvcG9seWdvbj4KICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgPHBhdGggZD0iTTAuNjY2NjY2NjY3LDE0IEwzLjMzMzMzMzMzLDE0IEwzLjMzMzMzMzMzLDYgTDAuNjY2NjY2NjY3LDYgTDAuNjY2NjY2NjY3LDE0IEwwLjY2NjY2NjY2NywxNCBMMC42NjY2NjY2NjcsMTQgWiBNMTUuMzMzMzMzMyw2LjY2NjY2NjY3IEMxNS4zMzMzMzMzLDUuOTMzMzMzMzMgMTQuNzMzMzMzMyw1LjMzMzMzMzMzIDE0LDUuMzMzMzMzMzMgTDkuNzkzMzMzMzMsNS4zMzMzMzMzMyBMMTAuNDI2NjY2NywyLjI4NjY2NjY3IEwxMC40NDY2NjY3LDIuMDczMzMzMzMgQzEwLjQ0NjY2NjcsMS44IDEwLjMzMzMzMzMsMS41NDY2NjY2NyAxMC4xNTMzMzMzLDEuMzY2NjY2NjcgTDkuNDQ2NjY2NjcsMC42NjY2NjY2NjcgTDUuMDYsNS4wNiBDNC44MTMzMzMzMyw1LjMgNC42NjY2NjY2Nyw1LjYzMzMzMzMzIDQuNjY2NjY2NjcsNiBMNC42NjY2NjY2NywxMi42NjY2NjY3IEM0LjY2NjY2NjY3LDEzLjQgNS4yNjY2NjY2NywxNCA2LDE0IEwxMiwxNCBDMTIuNTUzMzMzMywxNCAxMy4wMjY2NjY3LDEzLjY2NjY2NjcgMTMuMjI2NjY2NywxMy4xODY2NjY3IEwxNS4yNCw4LjQ4NjY2NjY3IEMxNS4zLDguMzMzMzMzMzMgMTUuMzMzMzMzMyw4LjE3MzMzMzMzIDE1LjMzMzMzMzMsOCBMMTUuMzMzMzMzMyw2LjcyNjY2NjY3IEwxNS4zMjY2NjY3LDYuNzIgTDE1LjMzMzMzMzMsNi42NjY2NjY2NyBMMTUuMzMzMzMzMyw2LjY2NjY2NjY3IEwxNS4zMzMzMzMzLDYuNjY2NjY2NjcgWiIgaWQ9IlNoYXBlIiBmaWxsPSIjQkFCQUJBIj48L3BhdGg+CiAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgPC9nPgogICAgICAgICAgICAgICAgICAgICAgICAgICAgPC9nPgogICAgICAgICAgICAgICAgICAgICAgICA8L2c+CiAgICAgICAgICAgICAgICAgICAgPC9nPgogICAgICAgICAgICAgICAgPC9nPgogICAgICAgICAgICA8L2c+CiAgICAgICAgPC9nPgogICAgPC9nPgo8L3N2Zz4K);
+    width: 16px;
+    height: 16px;
+}
+.c-my-review-helpfulness__icon-up_type_big-blue {
+    display: inline-block;
+    background: url(data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0iVVRGLTgiPz4KPHN2ZyB3aWR0aD0iMjdweCIgaGVpZ2h0PSIyN3B4IiB2aWV3Qm94PSIwIDAgMjcgMjciIHZlcnNpb249IjEuMSIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIiB4bWxuczp4bGluaz0iaHR0cDovL3d3dy53My5vcmcvMTk5OS94bGluayI+CiAgICA8IS0tIEdlbmVyYXRvcjogc2tldGNodG9vbCA0MiAoMzY3ODEpIC0gaHR0cDovL3d3dy5ib2hlbWlhbmNvZGluZy5jb20vc2tldGNoIC0tPgogICAgPHRpdGxlPkEzMjhGQTk1LTgyNDQtNDc4OS1CRjRCLURDMDAwRDk3MTM2ODwvdGl0bGU+CiAgICA8ZGVzYz5DcmVhdGVkIHdpdGggc2tldGNodG9vbC48L2Rlc2M+CiAgICA8ZGVmcz4KICAgICAgICA8ZmlsdGVyIHg9Ii01MCUiIHk9Ii01MCUiIHdpZHRoPSIyMDAlIiBoZWlnaHQ9IjIwMCUiIGZpbHRlclVuaXRzPSJvYmplY3RCb3VuZGluZ0JveCIgaWQ9ImZpbHRlci0xIj4KICAgICAgICAgICAgPGZlT2Zmc2V0IGR4PSIwIiBkeT0iMSIgaW49IlNvdXJjZUFscGhhIiByZXN1bHQ9InNoYWRvd09mZnNldE91dGVyMSI+PC9mZU9mZnNldD4KICAgICAgICAgICAgPGZlR2F1c3NpYW5CbHVyIHN0ZERldmlhdGlvbj0iMS41IiBpbj0ic2hhZG93T2Zmc2V0T3V0ZXIxIiByZXN1bHQ9InNoYWRvd0JsdXJPdXRlcjEiPjwvZmVHYXVzc2lhbkJsdXI+CiAgICAgICAgICAgIDxmZUNvbG9yTWF0cml4IHZhbHVlcz0iMCAwIDAgMCAwICAgMCAwIDAgMCAwICAgMCAwIDAgMCAwICAwIDAgMCAwLjEgMCIgdHlwZT0ibWF0cml4IiBpbj0ic2hhZG93Qmx1ck91dGVyMSIgcmVzdWx0PSJzaGFkb3dNYXRyaXhPdXRlcjEiPjwvZmVDb2xvck1hdHJpeD4KICAgICAgICAgICAgPGZlTWVyZ2U+CiAgICAgICAgICAgICAgICA8ZmVNZXJnZU5vZGUgaW49InNoYWRvd01hdHJpeE91dGVyMSI+PC9mZU1lcmdlTm9kZT4KICAgICAgICAgICAgICAgIDxmZU1lcmdlTm9kZSBpbj0iU291cmNlR3JhcGhpYyI+PC9mZU1lcmdlTm9kZT4KICAgICAgICAgICAgPC9mZU1lcmdlPgogICAgICAgIDwvZmlsdGVyPgogICAgPC9kZWZzPgogICAgPGcgaWQ9IkRlc2t0b3AiIHN0cm9rZT0ibm9uZSIgc3Ryb2tlLXdpZHRoPSIxIiBmaWxsPSJub25lIiBmaWxsLXJ1bGU9ImV2ZW5vZGQiPgogICAgICAgIDxnIGlkPSJEYXNoYm9hcmQtIiB0cmFuc2Zvcm09InRyYW5zbGF0ZSgtMTAxOC4wMDAwMDAsIC0yMDQuMDAwMDAwKSIgZmlsbD0iIzFBOUNCNyI+CiAgICAgICAgICAgIDxnIGlkPSJHcm91cC01LUNvcHkiIGZpbHRlcj0idXJsKCNmaWx0ZXItMSkiIHRyYW5zZm9ybT0idHJhbnNsYXRlKDMwOS4wMDAwMDAsIDE5MS4wMDAwMDApIj4KICAgICAgICAgICAgICAgIDxnIGlkPSJHcm91cC0yLUNvcHktMiIgdHJhbnNmb3JtPSJ0cmFuc2xhdGUoNjU0LjAwMDAwMCwgMC4wMDAwMDApIj4KICAgICAgICAgICAgICAgICAgICA8ZyBpZD0iR3JvdXAtOSIgdHJhbnNmb3JtPSJ0cmFuc2xhdGUoNTUuMDAwMDAwLCAxMy4wMDAwMDApIj4KICAgICAgICAgICAgICAgICAgICAgICAgPHBhdGggZD0iTTAsMjQuNSBMNC43LDI0LjUgTDQuNywxMC40IEwwLDEwLjQgTDAsMjQuNSBMMCwyNC41IFogTTI1Ljg1LDExLjU3NSBDMjUuODUsMTAuMjgyNSAyNC43OTI1LDkuMjI1IDIzLjUsOS4yMjUgTDE2LjA4NTc1LDkuMjI1IEwxNy4yMDIsMy44NTUyNSBMMTcuMjM3MjUsMy40NzkyNSBDMTcuMjM3MjUsMi45OTc1IDE3LjAzNzUsMi41NTEgMTYuNzIwMjUsMi4yMzM3NSBMMTUuNDc0NzUsMSBMNy43NDMyNSw4Ljc0MzI1IEM3LjMwODUsOS4xNjYyNSA3LjA1LDkuNzUzNzUgNy4wNSwxMC40IEw3LjA1LDIyLjE1IEM3LjA1LDIzLjQ0MjUgOC4xMDc1LDI0LjUgOS40LDI0LjUgTDE5Ljk3NSwyNC41IEMyMC45NTAyNSwyNC41IDIxLjc4NDUsMjMuOTEyNSAyMi4xMzcsMjMuMDY2NSBMMjUuNjg1NSwxNC43ODI3NSBDMjUuNzkxMjUsMTQuNTEyNSAyNS44NSwxNC4yMzA1IDI1Ljg1LDEzLjkyNSBMMjUuODUsMTEuNjgwNzUgTDI1LjgzODI1LDExLjY2OSBMMjUuODUsMTEuNTc1IEwyNS44NSwxMS41NzUgWiIgaWQ9IlNoYXBlLUNvcHkiPjwvcGF0aD4KICAgICAgICAgICAgICAgICAgICA8L2c+CiAgICAgICAgICAgICAgICA8L2c+CiAgICAgICAgICAgIDwvZz4KICAgICAgICA8L2c+CiAgICA8L2c+Cjwvc3ZnPgo=);
+    width: 27px;
+    height: 27px;
+}
+.c-my-review-helpfulness__info {
+    display: table;
+}
+.c-my-review-helpfulness__vote-count {
+    display: table-cell;
+    font-size: 30px;
+    color: #181818;
+    line-height: 40px;
+    padding-right: 22px;
+}
+.c-my-review-helpfulness__message {
+    display: table-cell;
+    vertical-align: middle;
+    width: 150px;
+    text-align: left;
+}
+.c-my-review-helpfulness_theme_dashboard {
+    font-size: 14px;
+    color: #202020;
+    margin: 0 auto;
+}
+.c-my-review-helpfulness_theme_dashboard .c-my-review-helpfulness__icon-up {
+    margin: 0 9px 0 0;
+}

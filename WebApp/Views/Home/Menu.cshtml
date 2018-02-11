@@ -1,5 +1,5 @@
 ﻿@model IEnumerable<DTO.Category>
-<ul>
+@*<ul>
     @foreach (DTO.Category item in Model)
     {
         <li>
@@ -17,4 +17,70 @@
             }
         </li>
     }
-</ul>
+</ul>*@
+
+@{ 
+    int i = 1;
+}
+<link href="~/Content/CssMenuVertical/MenuVertical.css" rel="stylesheet" />
+<div class="lzd-site-nav-menu">
+    <div class="lzd-site-menu-nav-container">
+        <div class="lzd-site-menu-nav-category">
+            <a class="lzd-site-menu-nav-category-label">
+                <span class="lzd-site-menu-nav-category-text">Danh mục</span>
+            </a>
+            <div class="lzd-site-menu-nav-menu lzd-site-menu-show-category">
+                <div class="mui-zebra-module" id="J_icms-5000514-1511529253108" data-module-id="icms-5000514-1511529253108" data-version="5.0.45" data-spm="icms-5000514-1511529253108">
+                    <div class="lzd-site-nav-menu-dropdown">
+                        <ul class="lzd-site-menu-root" data-spm="cate" data-spm-max-idx="0">
+                            @foreach (DTO.Category item in Model)
+                            {
+                                <li class="lzd-site-menu-root-item" id="Level_Category_No_@i" data-id="@i">
+                                    <a class="" href="#">
+                                        <span>@item.Name</span>
+                                    </a>
+
+                                </li>
+                                <ul class="lzd-site-menu-sub Level_1_Category_No_@i " >
+
+                                    @if (item.Categories != null)
+                                    {
+
+                                            @foreach (DTO.Category child in item.Categories)
+                    {
+                                                <li>
+                                                    <a href="/home/">@child.Name</a>
+                                                </li>
+                                                <li class="lzd-site-menu-sub-item">
+                                                    <a href="#">
+                                                        <span>@child.Name</span>
+                                                    </a>
+                                                </li>
+                                            }
+                                    }
+
+                                 
+
+                                </ul>
+
+                                @i = i + 1;
+                            }
+                        
+                        </ul>
+
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<script>
+    $(".lzd-site-menu-root-item").hover(function () {
+        $(".lzd-site-menu-sub").removeClass("lzd-site-menu-sub-active");
+        $(".lzd-site-menu-root-item a").removeClass("hover");
+        var id = $(this).data("id");
+        $(this).find("a").addClass("hover");
+        $(".Level_Category_No_" + id).addClass("lzd-site-menu-sub-active");
+    });
+</script>

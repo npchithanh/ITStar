@@ -1,0 +1,66 @@
+﻿<header id="header" class="">
+    <div class="top-bar">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12">
+                    <ul class="nav navbar-nav navbar-right text-uppercase">
+                        @*<li><a href="#">BÁN HÀNG CÙNG THNS</a></li>*@
+                        <li><a href="#">CHĂM SÓC KHÁCH HÀNG</a></li>
+                        <li><a href="#">KIỂM TRA ĐƠN HÀNG</a></li>
+                        @if (Identity.IsLogined)
+                        {
+                            <li><a href="/auth/login">@Identity.FullName</a></li>
+                            <li><a href="/auth/logout">Đăng Xuất</a></li>
+                        }
+                        else
+                        {
+                            <li><a href="/auth/login">ĐĂNG NHẬP</a></li>
+                            <li><a href="/auth/register">ĐĂNG KÝ</a></li>
+                        }
+                       
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="header-content">
+        <div class="container">
+            <div class="row">
+                <div class="col-sm-2">
+                    <a href="#" class="header-logo">
+                        <img src="/Images/logo.png" alt="">
+                    </a>
+                    <div class="btn-menu" style="display: none; color: rgb(230, 15, 30); font-size: 18px; margin-top: 8px; cursor: pointer;">
+                        <i class="fa fa-bars" aria-hidden="true"></i> <small>Tất cả danh mục</small>
+                    </div>
+                </div>
+                <div class="col-sm-8">
+                    <div class="row">
+                        <div class="col-xs-10">
+                            <div class="input-group">
+                                <input style="border-radius: 0; height: 38px" type="text"
+                                       class="form-control pull-right" placeholder="Search">
+                                <div class="btn btn-info input-group-addon"
+                                     style="color: #fff ; border-radius: 0; background-color: #e60f1e;">
+                                    <i class="fa fa-search" aria-hidden="true"></i>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-xs-2">
+                            <a href="#">
+                                <i style="color: #fff; margin-top: 5px" class="fa fa-2x fa-shopping-cart"
+                                   aria-hidden="true"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm-2">
+                    <a href="#" class="header-logo-app pull-right">
+                        <img src="/Images/banner-header-app-start.png" alt="">
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+</header><!-- /header -->

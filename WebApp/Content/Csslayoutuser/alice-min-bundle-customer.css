@@ -1,0 +1,803 @@
+﻿@charset "UTF-8";
+
+
+.account-structure-page {
+    position: relative;
+    margin: auto;
+    padding-top: 20px;
+}
+
+@media (min-width:1200px) {
+    .account-structure-page {
+        width: 1200px;
+    }
+}
+
+@media (max-width:1199px) {
+    .account-structure-page {
+        width: 1000px;
+    }
+}
+
+.account-structure-page__left-sidebar {
+    width: 200px;
+    float: left;
+}
+
+.account-structure-page__main-content {
+    float: right;
+    margin-bottom: 50px;
+}
+
+@media (min-width:1200px) {
+    .account-structure-page__main-content {
+        width: 980px;
+    }
+}
+
+@media (max-width:1199px) {
+    .account-structure-page__main-content {
+        width: 780px;
+    }
+}
+
+.account-structure-page__title {
+    font-size: 17px;
+    font-weight: lighter;
+    line-height: 20px;
+    color: #202020;
+    margin-bottom: 10px;
+}
+
+.account-structure-page .message-box {
+    margin-bottom: 20px;
+}
+
+.account-structure-page__section {
+    margin-bottom: 25px;
+}
+
+.account-structure-page__section-title {
+    font-size: 17px;
+    font-weight: lighter;
+    line-height: 20px;
+    color: #202020;
+    margin-bottom: 10px;
+}
+
+.account-structure-page__see-more-link {
+    display: inline-block;
+    font-size: 12px;
+    color: #1a9cb7;
+    float: right;
+    font-weight: 400;
+    vertical-align: top;
+}
+
+.l-hasSidebar .my-account-menu {
+    width: 200px;
+    float: left;
+}
+
+.my-account-menu__live-up-link {
+    display: block;
+    margin-bottom: 14px;
+}
+
+    .my-account-menu__live-up-link:hover {
+        text-decoration: none;
+    }
+
+    .my-account-menu__live-up-link .my-account-menu__user-name {
+        display: -ms-flexbox;
+        display: flex;
+        -ms-flex-align: center;
+        align-items: center;
+        -ms-flex-pack: justify;
+        justify-content: space-between;
+    }
+
+.my-account-menu__live-up-text {
+    font-size: 12px;
+    line-height: 13px;
+    -ms-flex-preferred-size: calc(100% - 45px);
+    flex-basis: calc(100% - 45px);
+}
+
+.my-account-menu__live-up-greeting {
+    font-weight: 700;
+}
+
+.my-account-menu__user-name {
+    font-size: 13px;
+    font-weight: 400;
+    line-height: 17px;
+    color: #202020;
+}
+
+.my-account-menu__link {
+    font-size: 13px;
+    font-weight: lighter;
+    line-height: 1.85;
+    color: #1a9cb7;
+}
+
+.my-account-menu__link_state_active {
+    color: #202020;
+}
+
+.my-account-menu__link_sub {
+    position: relative;
+    display: inline-block;
+    padding-left: 11px;
+    color: #202020;
+}
+
+    .my-account-menu__link_sub:before {
+        vertical-align: text-top;
+        display: inline-block;
+        background-image: url(/images/2014/sprites/icons-3bdd437f.png);
+        background-image: url(/images/2014/sprites/icons-3bdd437f.svg),none;
+        background-repeat: no-repeat;
+        background-position: -3px -6036px;
+        width: 7px;
+        height: 11px;
+        position: absolute;
+        top: 4px;
+        left: 0;
+        content: "";
+    }
+
+    .my-account-menu__link_sub:before_valign_middle {
+        vertical-align: middle;
+    }
+
+    .my-account-menu__link_sub:before_valign_top {
+        vertical-align: top;
+    }
+
+.my-account-menu__verified {
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-align: center;
+    align-items: center;
+    font-size: 12px;
+    line-height: 13px;
+    color: #478500;
+    font-weight: lighter;
+}
+
+.my-account-menu__verified-icon {
+    vertical-align: text-top;
+    display: inline-block;
+    background-image: url(/images/2014/sprites/icons-3bdd437f.png);
+    background-image: url(/images/2014/sprites/icons-3bdd437f.svg),none;
+    background-repeat: no-repeat;
+    background-position: -3px -8959px;
+    width: 19px;
+    height: 22px;
+    margin-left: 6px;
+}
+
+.my-account-menu__verified-icon_valign_middle {
+    vertical-align: middle;
+}
+
+.my-account-menu__verified-icon_valign_top {
+    vertical-align: top;
+}
+
+.my-account-menu__wallet-icon {
+    vertical-align: text-top;
+    display: inline-block;
+    background-image: url(/images/2014/sprites/icons-3bdd437f.png);
+    background-image: url(/images/2014/sprites/icons-3bdd437f.svg),none;
+    background-repeat: no-repeat;
+    background-position: -3px -2709px;
+    width: 11px;
+    height: 11px;
+    margin-right: 4px;
+}
+
+.my-account-menu__wallet-icon_valign_middle {
+    vertical-align: middle;
+}
+
+.my-account-menu__wallet-icon_valign_top {
+    vertical-align: top;
+}
+
+.my-account-menu__wallet-promo {
+    font-size: 9px;
+    color: #478500;
+    border-bottom: .5px solid #979797;
+    display: inline-block;
+    padding-right: 15px;
+    padding-bottom: 4px;
+    margin-bottom: 8px;
+}
+
+.my-account-menu__item_first {
+    margin-top: 9px;
+    margin-bottom: 8px;
+}
+
+.css-my-account-form {
+    font-size: 13px;
+    font-weight: lighter;
+    color: #202020;
+}
+
+.css-my-account-form__row {
+    margin-bottom: 15px;
+}
+
+    .css-my-account-form__row:after {
+        content: "";
+        display: block;
+        clear: both;
+    }
+
+.css-my-account-form__row_margin-bottom_30 {
+    margin-bottom: 30px;
+}
+
+.css-my-account-form__row_content_button {
+    width: 515px;
+    margin-top: 30px;
+    text-align: right;
+}
+
+.css-my-account-form__row_content_button-light {
+    width: 470px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    text-align: right;
+}
+
+.css-my-account-form__left {
+    display: table;
+    width: 140px;
+    float: left;
+    text-align: right;
+}
+
+.css-my-account-form__left_width_150 {
+    width: 150px;
+}
+
+.css-my-account-form__right {
+    width: 360px;
+    float: left;
+    margin-left: 16px;
+}
+
+.css-my-account-form__right-inner {
+    line-height: 40px;
+}
+
+.css-my-account-form__label {
+    display: table-cell;
+    height: 40px;
+    vertical-align: middle;
+    font-size: 13px;
+    font-weight: lighter;
+    color: gray;
+}
+
+.css-my-account-form__label_line-height_initial {
+    line-height: normal;
+}
+
+.css-my-account-form__label_line-height_22px {
+    line-height: 22px;
+    vertical-align: top;
+}
+
+.css-my-account-form__instruction {
+    margin-top: 6px;
+    font-size: 12px;
+    color: gray;
+}
+
+.css-my-account-form__error {
+    font-size: 11px;
+    font-weight: lighter;
+    color: #dc493f;
+    line-height: 25px;
+}
+
+.css-my-account-form__error_state_close {
+    line-height: normal;
+}
+
+.css-my-account-form__input {
+    width: 360px;
+    height: 40px;
+    box-sizing: border-box;
+    border-radius: 2px;
+    box-shadow: 0 3px 0 0 #f1f1f1;
+    border: 1px solid #929292;
+    color: #202020;
+    font-size: 13px;
+    font-weight: lighter;
+    padding: 12px;
+}
+
+.css-my-account-form__input_style_light {
+    width: 305px;
+    box-shadow: 0 3px 0 0 #fafafa;
+    border: 1px solid #dadada;
+}
+
+.css-my-account-form__wrap-radio {
+    line-height: 40px;
+}
+
+.css-my-account-form__radio-input {
+    display: inline-block;
+}
+
+.css-my-account-form__radio-label {
+    display: inline-block;
+    margin: 0 25px 0 5px;
+}
+
+.css-my-account-form__select {
+    width: 100%;
+    height: 40px;
+    line-height: 40px;
+    padding: 0 0 0 12px;
+    color: #545454;
+    border: 1px solid #929292;
+    border-radius: 2px;
+    background: 0 0;
+    font-size: 13px;
+    box-shadow: 0 3px 0 0 #f1f1f1;
+    box-sizing: border-box;
+}
+
+    .css-my-account-form__select ~ .css-my-account-form__select {
+        margin-left: 15px;
+    }
+
+.css-my-account-form__checkbox-label {
+    display: inline;
+    margin-left: 2px;
+    font-size: 13px;
+    font-weight: lighter;
+    color: #202020;
+}
+
+.css-my-account-form__checkbox-input {
+    width: 14px !important;
+    height: 15px !important;
+    border: 1px solid gray;
+}
+
+.css-my-account-form__checkbox-list-ul {
+    -moz-column-count: 2;
+    column-count: 2;
+}
+
+.css-my-account-form__checkbox-item {
+    white-space: nowrap;
+    line-height: 22px;
+}
+
+.css-my-account-form__cancel-button {
+    display: inline-block;
+    min-width: 144px;
+    box-sizing: border-box;
+    padding: 12px 42px;
+    line-height: 16px;
+    background: #f1f1f1;
+    text-transform: uppercase;
+    font-size: 14px;
+    font-weight: lighter;
+    color: gray;
+    border: none;
+    text-align: center;
+}
+
+    .css-my-account-form__cancel-button:hover {
+        color: gray;
+        text-decoration: none;
+        opacity: .7;
+    }
+
+.css-my-account-form__submit-button {
+    display: inline-block;
+    min-width: 144px;
+    box-sizing: border-box;
+    padding: 0 42px;
+    line-height: 40px;
+    background: #f57224;
+    text-transform: uppercase;
+    font-size: 14px;
+    font-weight: lighter;
+    color: #fff;
+    border: none;
+    text-align: center;
+    margin-left: 12px;
+}
+
+    .css-my-account-form__submit-button:hover {
+        opacity: .7;
+    }
+
+.css-my-account-form__notice {
+    float: left;
+    margin-left: 25px;
+    line-height: 40px;
+    font-size: 13px;
+    font-weight: lighter;
+    color: #999;
+    max-width: 250px;
+}
+
+.css-my-account-form__static {
+    line-height: 40px;
+    color: #202020;
+    font-size: 13px;
+    font-weight: lighter;
+}
+
+.css-my-account-form__phone {
+    margin-right: 10px;
+}
+
+.account-dashboard__boxes-row {
+    display: -ms-flexbox;
+    display: flex;
+}
+
+.account-dashboard__box {
+    width: calc((100% - 2 * 16px)/ 3);
+    float: left;
+    margin-left: 16px;
+    background: #fff;
+    padding: 10px 16px;
+    box-sizing: border-box;
+    -ms-flex: 1;
+    flex: 1;
+}
+
+.account-dashboard__box_first {
+    margin-left: 0;
+}
+
+.account-dashboard__box-title {
+    font-size: 17px;
+    font-weight: lighter;
+    line-height: 20px;
+    color: #202020;
+}
+
+.account-dashboard__box-content {
+    width: calc(100% - 35px);
+    float: left;
+}
+
+.account-dashboard__box-edit {
+    width: 35px;
+    float: left;
+    text-align: right;
+}
+
+.account-dashboard__link-edit {
+    text-transform: uppercase;
+    font-size: 12px;
+    color: #1a9cb7;
+    font-weight: 400;
+}
+
+.account-dashboard__link-edit_float_right {
+    float: right;
+}
+
+.account-dashboard__box-info {
+    margin-top: 8px;
+    font-size: 12px;
+    font-weight: lighter;
+}
+
+.account-dashboard__recent-orders {
+    margin-top: 25px;
+}
+
+.account-dashboard__title {
+    font-size: 17px;
+    font-weight: lighter;
+    line-height: 20px;
+    color: #202020;
+    margin-bottom: 10px;
+}
+
+.account-dashboard__content {
+    background: #fff;
+    margin-bottom: 25px;
+}
+
+.recent-orders__title {
+    font-size: 17px;
+    font-weight: lighter;
+    line-height: 20px;
+    color: #202020;
+    margin-bottom: 10px;
+    display: block;
+}
+
+.recent-orders__table {
+    width: 100%;
+    display: table;
+    border-collapse: collapse;
+    color: #202020;
+    font-size: 13px;
+    text-align: left;
+    font-weight: 300;
+    background: #fafafa;
+}
+
+.recent-orders__table-row {
+    display: table-row;
+    background: #fff;
+    border-top: 1px solid #f1f1f1;
+}
+
+.recent-orders__table-row-header {
+    background: 0 0;
+    font-weight: 400;
+    border-top: none;
+}
+
+.recent-orders__table-cell {
+    display: table-cell;
+    padding: 12px 7px;
+}
+
+    .recent-orders__table-cell:first-of-type {
+        padding-left: 20px;
+    }
+
+    .recent-orders__table-cell:last-of-type {
+        padding-right: 20px;
+    }
+
+.recent-orders .item-buttons-container {
+    text-align: right;
+}
+
+.recent-orders .item-status {
+    color: #9ca73b;
+}
+
+.recent-orders .item-status-closed {
+    color: gray;
+}
+
+.recent-orders .item-status-canceled {
+    color: #d2232a;
+}
+
+.recent-orders .item-button {
+    text-transform: uppercase;
+    font-size: 12px;
+    font-weight: 400;
+    padding: 0 10px;
+    white-space: nowrap;
+    cursor: pointer;
+}
+
+.recent-orders .item-button_inactive {
+    color: #dadada;
+}
+
+.recent-orders .item-button-icon {
+    margin-left: 5px;
+}
+
+.account-confirm-popup {
+    padding: 21px 23px;
+    background-color: #fff;
+    width: 360px;
+}
+
+.account-confirm-popup_style_flex {
+    width: 450px;
+}
+
+.account-confirm-popup__close {
+    vertical-align: text-top;
+    display: inline-block;
+    position: absolute;
+    right: 11px;
+    top: 11px;
+    cursor: pointer;
+}
+
+.account-confirm-popup__close_valign_middle {
+    vertical-align: middle;
+}
+
+.account-confirm-popup__close_valign_top {
+    vertical-align: top;
+}
+
+.account-confirm-popup__title {
+    line-height: 20px;
+    font-size: 17px;
+}
+
+.account-confirm-popup__message, .account-confirm-popup__title {
+    font-weight: 400;
+    font-style: normal;
+    font-stretch: normal;
+    font-family: Helvetica Neue;
+    color: #202020;
+}
+
+.account-confirm-popup__message {
+    margin: 16px 0;
+    font-size: 14px;
+}
+
+.account-confirm-popup__error {
+    font-family: Helvetica Neue;
+    font-size: 14px;
+    font-weight: 400;
+    font-style: normal;
+    font-stretch: normal;
+    color: #dc493f;
+}
+
+.account-confirm-popup__control {
+    text-align: center;
+    margin: 39px 0 8px;
+}
+
+.account-confirm-popup__control_text-align_right {
+    text-align: right;
+}
+
+.account-confirm-popup__button-oke {
+    padding: 11px 23px 12px;
+    background-color: #f57224;
+    font-family: Helvetica;
+    font-size: 14px;
+    font-weight: 400;
+    font-style: normal;
+    font-stretch: normal;
+    color: #fff;
+    border: none;
+    text-transform: uppercase;
+}
+
+.account-confirm-popup__button-oke_style_flex {
+    padding: 11px 58px 12px;
+}
+
+.account-confirm-popup__button-oke:hover {
+    opacity: .7;
+}
+
+.account-confirm-popup__button-cancel {
+    margin-right: 12px;
+    padding: 11px 23px 12px;
+    background-color: #f1f1f1;
+    font-family: Helvetica;
+    font-size: 14px;
+    font-weight: 400;
+    font-style: normal;
+    font-stretch: normal;
+    color: gray;
+    border: none;
+    text-transform: uppercase;
+}
+
+.account-confirm-popup__button-cancel_style_flex {
+    padding: 11px 45px 12px;
+}
+
+.account-confirm-popup__button-cancel:hover {
+    opacity: .7;
+}
+
+.account-info-popup.nyroModalCont {
+    border-radius: 4px;
+}
+
+.account-info-popup__wrapper {
+    max-width: 350px;
+}
+
+.account-info-popup__topline {
+    height: 64px;
+    background: url(/images/2014/account-info-popup-topline.png) no-repeat 0 0 #183545;
+    background-size: cover;
+    position: relative;
+    margin-bottom: 27px;
+}
+
+.account-info-popup__topline-icon {
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-align: center;
+    align-items: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    height: 54px;
+    width: 54px;
+    border-radius: 50%;
+    border: 8px solid #fff;
+    box-sizing: border-box;
+    background-color: #183545;
+    position: absolute;
+    left: 50%;
+    bottom: -27px;
+    margin-left: -27px;
+}
+
+.account-info-popup__content, .account-info-popup__header {
+    padding-left: 20px;
+    padding-right: 20px;
+    color: #202020;
+}
+
+.account-info-popup__header {
+    padding-top: 5px;
+    padding-bottom: 8px;
+}
+
+.account-info-popup__content {
+    padding-top: 8px;
+    padding-bottom: 10px;
+}
+
+.account-info-popup__footer {
+    padding-top: 10px;
+    padding-bottom: 26px;
+}
+
+.account-info-popup__title {
+    text-align: center;
+    line-height: 1.1;
+    font-size: 18px;
+    font-weight: 300;
+    font-style: normal;
+}
+
+.account-info-popup__message {
+    white-space: pre-line;
+    line-height: 1.3;
+    font-size: 14px;
+}
+
+.account-info-popup__controls {
+    text-align: center;
+}
+
+.account-info-popup__button {
+    padding: 11px 20px 12px;
+    min-width: 120px;
+    background-color: #f57224;
+    font-size: 14px;
+    font-weight: 300;
+    color: #fff;
+    cursor: pointer;
+    border: none;
+    border-radius: 2px;
+    text-transform: uppercase;
+    line-height: 1;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    outline: 0;
+}
+
+    .account-info-popup__button:hover {
+        opacity: .8;
+    }
+
+
