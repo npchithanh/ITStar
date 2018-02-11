@@ -10,6 +10,8 @@ namespace DTO
         public byte Position { get; set; }
         public int? ParentId { get; set; }
 
+        public int? AttachmentId { get; set; }
+
         public List<Category> Categories { get; set; }
 
     }

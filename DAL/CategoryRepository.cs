@@ -81,5 +81,8 @@ namespace DAL
                 return GetCategories(reader);
             }
         }
+
+        
+
     }
 }

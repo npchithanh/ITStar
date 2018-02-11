@@ -14,8 +14,9 @@ namespace WebApp.Controllers
         public ActionResult Logout()
         {
             app.Session.Remove(Cookie.Key);
-            Cookie.Remove();   
-            return RedirectToAction(string.Empty, "home");
+            Cookie.Remove();
+            //return RedirectToAction(string.Empty, "home");
+            return Redirect("/");
         }
 
         public ActionResult Login()
@@ -32,7 +33,8 @@ namespace WebApp.Controllers
                 DTO.Session session = new DTO.Session { Id = Util.RandomBuilder.RandomString(32), AccountId = obj.Id, IP = Request.UserHostAddress, Device = Request.Browser.Platform, Browser = Request.UserAgent };
                 app.Session.Add(session);
                 Cookie.Key = session.Id;
-                return RedirectToAction(string.Empty, "home");
+                //return RedirectToAction(string.Empty, "home");
+                return Redirect("/");
             }
             else
             {

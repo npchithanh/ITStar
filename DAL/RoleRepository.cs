@@ -8,6 +8,15 @@ namespace DAL
     {
         internal RoleRepository() { }
 
+        public bool Add(RoleFeature obj)
+        {
+            return database.ExecuteNonQuery("AddRoleFeature", obj.RoleId, obj.FeatureId) > 0;
+        }
+
+        public bool Remove(RoleFeature obj)
+        {
+            return database.ExecuteNonQuery("RemoveRoleFeature", obj.RoleId, obj.FeatureId) > 0;
+        }
         public bool IsInRole(long accountId, string role)
         {
             return (int)database.ExecuteScalar("IsInRole", accountId, role) > 0;

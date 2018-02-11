@@ -2,6 +2,70 @@
 {
     public class AppProvider
     {
+        SelectionRepository selection;
+        public SelectionRepository Selection
+        {
+            get
+            {
+                if (selection == null)
+                {
+                    selection = new SelectionRepository();
+                }
+                return selection;
+            }
+        }
+
+        PopularRepository popular;
+        public PopularRepository Popular
+        {
+            get
+            {
+                if (popular == null)
+                {
+                    popular = new PopularRepository();
+                }
+                return popular;
+            }
+        }
+
+        AttachmentRepository attachment;
+        public AttachmentRepository Attachment
+        {
+            get
+            {
+                if (attachment == null)
+                {
+                    attachment = new AttachmentRepository();
+                }
+                return attachment;
+            }
+        }
+
+        AttachmentTypeRepository attachmentType;
+        public AttachmentTypeRepository AttachmentType
+        {
+            get
+            {
+                if (attachmentType == null)
+                {
+                    attachmentType = new AttachmentTypeRepository();
+                }
+                return attachmentType;
+            }
+        }
+
+        FeatureRepository feature;
+        public FeatureRepository Feature
+        {
+            get
+            {
+                if (feature == null)
+                {
+                    feature = new FeatureRepository();
+                }
+                return feature;
+            }
+        }
 
         AccountRepository acccount;
         public AccountRepository Acccount

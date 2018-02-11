@@ -30,6 +30,7 @@
     <div class="container body-content">
         @if (Identity.IsLogined)
         {
+            <p>@Identity.Id</p>
             <p>@Identity.Username</p>
             <p>@Identity.FullName</p>
             <a href="/auth/logout">Logout</a>

@@ -12,7 +12,7 @@ namespace WebApp.Controllers
         // GET: Home
         public ActionResult Index(HttpPostedFileBase file)
         {
-            file.ContentType
+            //file.ContentType
             return View();
         }
         [ChildActionOnly]
