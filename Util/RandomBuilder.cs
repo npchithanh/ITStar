@@ -18,7 +18,7 @@ namespace Util
         }
         public static long RandomLong()
         {
-            return (long)Math.Round(rnd.NextDouble() * long.MaxValue, 0);
+            return (long)rnd.Next() * (long)rnd.Next();
         }
     }
 }

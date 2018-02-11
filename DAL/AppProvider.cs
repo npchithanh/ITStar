@@ -2,6 +2,68 @@
 {
     public class AppProvider
     {
+        ProductRepository product;
+        public ProductRepository Product
+        {
+            get
+            {
+                if (product == null)
+                {
+                    product = new ProductRepository();
+                }
+                return product;
+            }
+        }
+        BrandRepository brand;
+        public BrandRepository Brand
+        {
+            get
+            {
+                if (brand == null)
+                {
+                    brand = new BrandRepository();
+                }
+                return brand;
+            }
+        }
+
+        CartRepository cart;
+        public CartRepository Cart
+        {
+            get
+            {
+                if (cart == null)
+                {
+                    cart = new CartRepository();
+                }
+                return cart;
+            }
+        }
+        CustomerRepository customer;
+        public CustomerRepository Customer
+        {
+            get
+            {
+                if (customer == null)
+                {
+                    customer = new CustomerRepository();
+                }
+                return customer;
+            }
+        }
+        SupplierRepository supplier;
+        public SupplierRepository Supplier
+        {
+            get
+            {
+                if (supplier == null)
+                {
+                    supplier = new SupplierRepository();
+                }
+                return supplier;
+            }
+        }
+
         SelectionRepository selection;
         public SelectionRepository Selection
         {
@@ -118,14 +180,14 @@
             }
         }
 
-        ProfileRepository profile;
-        public ProfileRepository Profile
+        SupplierRepository profile;
+        public SupplierRepository Profile
         {
             get
             {
                 if (profile == null)
                 {
-                    profile = new ProfileRepository();
+                    profile = new SupplierRepository();
                 }
                 return profile;
             }

@@ -6,8 +6,6 @@ namespace DAL
 {
     public class RoleFeatureRepository : BaseRepository
     {
-       
-
         static List<RoleFeature> GetRoleFeatures(IDataReader reader)
         {
             List<RoleFeature> list = new List<RoleFeature>();

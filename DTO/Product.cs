@@ -8,6 +8,7 @@
         public int BrandId { get; set; }
         public int Price { get; set; }
         public int DealPrice { get; set; }
+        public string Explain { get; set; }
         public bool IsNewest { get; set; }
         public bool IsHotest { get; set; }
 

@@ -14,7 +14,7 @@ namespace DAL
         }
         public bool Edit(Cart obj)
         {
-            return database.ExecuteNonQuery("EditCart", obj.CartId, obj.ProductId, obj.Quantity) > 0;
+            return database.ExecuteNonQuery("EditCart", obj.Id, obj.Quantity) > 0;
         }
         public bool Remove(int id)
         {
@@ -46,9 +46,9 @@ namespace DAL
         {
             return new Cart
             {
-                Id = (int)reader["CartId"],
+                Id = (int)reader["RecordId"],
                 ProductName = (string)reader["ProductName"],
-                Price = (int)reader["Explain"],
+                Price = (int)reader["Price"],
                 DealPrice = (int)reader["DealPrice"],
                 Quantity = (short)reader["Quantity"],
                 CartId = (long)reader["CartId"]

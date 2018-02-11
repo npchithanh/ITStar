@@ -10,11 +10,11 @@ namespace DAL
         internal ProductRepository() { }
         public bool Add(Product obj)
         {
-            return database.ExecuteNonQuery("AddProduct", obj.CategoryId, obj.BrandId, obj.Name, obj.Price, obj.DealPrice, obj.IsNewest, obj.IsHotest, obj.Title, obj.Description, obj.Keywords) > 0;
+            return database.ExecuteNonQuery("AddProduct", obj.CategoryId, obj.BrandId, obj.Name, obj.Price, obj.DealPrice, obj.Explain, obj.IsNewest, obj.IsHotest, obj.Title, obj.Description, obj.Keywords) > 0;
         }
         public bool Edit(Product obj)
         {
-            return database.ExecuteNonQuery("EditProduct", obj.Id, obj.CategoryId, obj.BrandId, obj.Name, obj.Price, obj.DealPrice, obj.IsNewest, obj.IsHotest, obj.Title, obj.Description, obj.Keywords) > 0;
+            return database.ExecuteNonQuery("EditProduct", obj.Id, obj.CategoryId, obj.BrandId, obj.Name, obj.Price, obj.DealPrice, obj.Explain, obj.IsNewest, obj.IsHotest, obj.Title, obj.Description, obj.Keywords) > 0;
         }
         public bool Remove(int id)
         {
