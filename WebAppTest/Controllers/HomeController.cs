@@ -7,6 +7,8 @@ namespace WebAppTest.Controllers
         // GET: Home
         public ActionResult Index()
         {
+            app.Attachment.Add(new DTO.Attachment { AttachmentTypeId = 1105091368, Url = "home.jpg", Alt = "Home" });
+
             //app.Brand.Add(new DTO.Brand { Name = "DELL" });
             //app.Product.Add(new DTO.Product { BrandId = 1744266147, CategoryId = 31426961, Name = "May tinh DELL Vostro", Price = 300000, Title = "Ko biet" });
 

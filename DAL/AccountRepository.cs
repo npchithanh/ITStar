@@ -30,6 +30,7 @@ namespace DAL
         {
             return database.ExecuteNonQuery("AddUserInRole", obj.AccountId, obj.RoleId) > 0;
         }
+       
 
         public bool Remove(UserInRole obj)
         {
@@ -40,6 +41,30 @@ namespace DAL
         {
             return (int)database.ExecuteScalar("CountAccount");
         }
+        static Account GetAccount(IDataReader reader)
+        {
+            return new Account
+            {
+                Id = (long)reader["AccountId"],
+                Username = (string)reader["Username"],
+                FullName = reader["FullName"] == DBNull.Value ? null : (string)reader["FullName"],
+                DateOfBirth = reader["DateOfBirth"] == DBNull.Value ? null : (DateTime?)reader["DateOfBirth"],
+                Gender = (bool)reader["Gender"],
+                IsApproved = (bool)reader["IsApproved"],
+                IsLocked = (bool)reader["IsLocked"]
+            };
+        }
+        public Account GetAccountById(long id)
+        {
+            using (IDataReader reader = database.ExecuteReader("GetAccountById", id))
+            {
+                if (reader.Read())
+                {
+                    return GetAccount(reader);
+                }
+                return null;
+            }
+        }
 
         public List<Account> GetAccounts(int index, int size)
         {
@@ -48,16 +73,7 @@ namespace DAL
                 List<Account> list = new List<Account>();
                 while (reader.Read())
                 {
-                    list.Add(new Account
-                    {
-                        Id = (long)reader["AccountId"],
-                        Username = (string)reader["Username"],
-                        FullName = reader["FullName"] == DBNull.Value ? null : (string)reader["FullName"],
-                        DateOfBirth = reader["DateOfBirth"] == DBNull.Value ? null : (DateTime?)reader["DateOfBirth"],
-                        Gender = (bool)reader["Gender"],
-                        IsApproved = (bool)reader["IsApproved"],
-                        IsLocked = (bool)reader["IsLocked"]
-                    });
+                    list.Add(GetAccount(reader));
                 }
                 return list;
             }
@@ -82,9 +98,18 @@ namespace DAL
             }
             
         }
+        public bool Edit(Account obj)
+        {
+            return database.ExecuteNonQuery("EditProfile", obj.Id, obj.Email, obj.FullName, obj.DateOfBirth, obj.Gender) > 0;
+        }
         public bool Add(Account obj)
         {
-            return database.ExecuteNonQuery("AddAccount", obj.Username, Hash.MD5(obj.Username + "@" + obj.Password), obj.FullName, obj.DateOfBirth, obj.Gender, obj.IsApproved) > 0;
+            return database.ExecuteNonQuery("AddAccount", obj.Username, Hash.MD5(obj.Username + "@" + obj.Password), obj.Email, obj.FullName, obj.DateOfBirth, obj.Gender, obj.IsApproved) > 0;
+        }
+
+        public bool Change(string username, string oldPassword, string newPassword)
+        {
+            return database.ExecuteNonQuery("ChangePassword", username, Hash.MD5(username + "@" + oldPassword), Hash.MD5(username + "@" + newPassword)) > 0;
         }
     }
 }

@@ -7,8 +7,6 @@ namespace DAL
 {
     public class FeatureRepository : BaseRepository
     {
-
-
         public bool Add(Feature obj)
         {
             return database.ExecuteNonQuery("AddFeature", obj.Name, obj.Controller, obj.Action, obj.Url) > 0;

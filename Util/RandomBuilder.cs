@@ -20,5 +20,9 @@ namespace Util
         {
             return (long)rnd.Next() * (long)rnd.Next();
         }
+        public static int RandomInt()
+        {
+            return rnd.Next();
+        }
     }
 }

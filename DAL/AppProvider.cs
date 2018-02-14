@@ -2,6 +2,18 @@
 {
     public class AppProvider
     {
+        BillRepository bill;
+        public BillRepository Bill
+        {
+            get
+            {
+                if (bill == null)
+                {
+                    bill = new BillRepository();
+                }
+                return bill;
+            }
+        }
         ProductRepository product;
         public ProductRepository Product
         {

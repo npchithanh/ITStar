@@ -24,6 +24,7 @@ namespace DAL
                 return list;
             }
         }
+
         static Supplier GetSupplier(IDataReader reader)
         {
             return new Supplier
