@@ -2,6 +2,127 @@
 {
     public class AppProvider
     {
+        BranchRepository branch;
+        public BranchRepository Branch
+        {
+            get
+            {
+                if (branch == null)
+                {
+                    branch = new BranchRepository();
+                }
+                return branch;
+            }
+        }
+        EmployeeRepository employee;
+        public EmployeeRepository Employee
+        {
+            get
+            {
+                if (employee == null)
+                {
+                    employee = new EmployeeRepository();
+                }
+                return employee;
+            }
+        }
+        RatingRepository rating;
+        public RatingRepository Rating
+        {
+            get
+            {
+                if (rating == null)
+                {
+                    rating = new RatingRepository();
+                }
+                return rating;
+            }
+        }
+        CommentRepository comment;
+        public CommentRepository Comment
+        {
+            get
+            {
+                if (comment == null)
+                {
+                    comment = new CommentRepository();
+                }
+                return comment;
+            }
+        }
+
+        AddressRepository address;
+        public AddressRepository Address
+        {
+            get
+            {
+                if (address == null)
+                {
+                    address = new AddressRepository();
+                }
+                return address;
+            }
+        }
+        AttributeValueRepository attributeValue;
+        public AttributeValueRepository AttributeValue
+        {
+            get
+            {
+                if (attributeValue == null)
+                {
+                    attributeValue = new AttributeValueRepository();
+                }
+                return attributeValue;
+            }
+        }
+        AttributeRepository attribute;
+        public AttributeRepository Attribute
+        {
+            get
+            {
+                if (attribute == null)
+                {
+                    attribute = new AttributeRepository();
+                }
+                return attribute;
+            }
+        }
+        ViewedRepository viewed;
+        public ViewedRepository Viewed
+        {
+            get
+            {
+                if (viewed == null)
+                {
+                    viewed = new ViewedRepository();
+                }
+                return viewed;
+            }
+        }
+        OrderRepository order;
+        public OrderRepository Order
+        {
+            get
+            {
+                if (order == null)
+                {
+                    order = new OrderRepository();
+                }
+                return order;
+            }
+        } 
+        ReceiptRepository receipt;
+        public ReceiptRepository Receipt
+        {
+            get
+            {
+                if (receipt == null)
+                {
+                    receipt = new ReceiptRepository();
+                }
+                return receipt;
+            }
+        }
         BillRepository bill;
         public BillRepository Bill
         {
@@ -242,5 +363,7 @@
                 return category;
             }
         }
+
+
     }
 }

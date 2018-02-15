@@ -10,11 +10,11 @@ namespace DAL
         internal CategoryRepository() { }
         public bool Add(Category obj)
         {
-            return database.ExecuteNonQuery("AddCategory", obj.Name, obj.Position, obj.Title, obj.Description, obj.Keywords, obj.ParentId) > 0;
+            return database.ExecuteNonQuery("AddCategory", obj.Name, obj.Position, obj.Title, obj.Description, obj.Keywords, obj.ParentId, obj.AttachmentId) > 0;
         }
         public bool Edit(Category obj)
         {
-            return database.ExecuteNonQuery("EditCategory", obj.Id, obj.Name, obj.Position, obj.Title, obj.Description, obj.Keywords, obj.ParentId) > 0;
+            return database.ExecuteNonQuery("EditCategory", obj.Id, obj.Name, obj.Position, obj.Title, obj.Description, obj.Keywords, obj.ParentId, obj.AttachmentId) > 0;
         }
         public bool Remove(int id)
         {

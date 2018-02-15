@@ -6,7 +6,7 @@ using Util;
 
 namespace DAL
 {
-    class ReceiptRepository : BaseRepository
+    public class ReceiptRepository : BaseRepository
     {
         internal ReceiptRepository() { }
 
@@ -60,8 +60,7 @@ namespace DAL
                 AddedDate = (DateTime)reader["AddedDate"],
                 StatusName = (string)reader["StatusName"],
                 StatusId = (int)reader["StatusId"],
-                CustomerId = (long)reader["CustomerId"],
-
+                CustomerId = (long)reader["CustomerId"]
             };
         }
     }

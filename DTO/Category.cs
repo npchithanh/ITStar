@@ -11,7 +11,7 @@ namespace DTO
         public int? ParentId { get; set; }
 
         public int? AttachmentId { get; set; }
-
+        
         public List<Category> Categories { get; set; }
 
     }

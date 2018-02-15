@@ -1,4 +1,5 @@
 ﻿using DTO;
+using System;
 using System.Collections.Generic;
 using System.Data;
 
@@ -18,19 +19,26 @@ namespace DAL
         {
             return database.ExecuteNonQuery("DeletePopular", id) > 0;
         }
+        static Popular GetPopular(IDataReader reader)
+        {
+            return new Popular
+            {
+                Id = (int)reader["CategoryId"],
+                Name = (string)reader["CategoryName"],
+                Url = (string)reader["Url"],
+                Alt = reader["Alt"] == DBNull.Value ? null : (string)reader["Alt"]
+            };
+        }
 
         public List<Popular> GetCategoriesPopular()
         {
             List<Popular> list = new List<Popular>();
             using (IDataReader reader = database.ExecuteReader("GetCategoriesPopular"))
             {
-                list.Add(new Popular
+                while (reader.Read())
                 {
-                    Id = (int)reader["CategoryId"],
-                    Name = (string)reader["CategoryName"],
-                    Alt = (string)reader["Alt"],
-                    Url = (string)reader["Url"]
-                });
+                    list.Add(GetPopular(reader));
+                }                
                 return list;
             }
         }

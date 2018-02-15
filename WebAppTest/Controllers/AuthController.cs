@@ -38,7 +38,7 @@ namespace WebAppTest.Controllers
             int ret = app.Acccount.Login(obj);
             if (ret == 2)
             {
-                DTO.Session session = new DTO.Session { Id = Util.RandomBuilder.RandomString(32), AccountId = obj.Id, IP = Request.UserHostAddress, Device = Request.Browser.Platform, Browser = Request.UserAgent };
+                Session session = new Session { Id = Util.RandomBuilder.RandomString(32), AccountId = obj.Id, IP = Request.UserHostAddress, Device = Request.Browser.Platform, Browser = Request.UserAgent };
                 app.Session.Add(session);
                 Cookie.Key = session.Id;
                 return Redirect("/");

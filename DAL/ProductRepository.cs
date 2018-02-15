@@ -78,6 +78,13 @@ namespace DAL
                 return GetProducts(reader);
             }
         }
+        public List<Product> GetProductsSamePrice(int id, int categoryId, int price, int? epsilon = null)
+        {
+            using (IDataReader reader = database.ExecuteReader("GetProductsSamePrice", id, categoryId, price, epsilon))
+            {
+                return GetProducts(reader);
+            }
+        }
 
         public List<Product> GetProductsByBrand(int id, int index, int size)
         {
@@ -103,16 +110,13 @@ namespace DAL
             }
         }
 
-        /*public Product GetProductById(int id)
+        public List<Product> GetProductsViewed(long id)
         {
-            using (IDataReader reader = database.ExecuteReader("GetProductById", id))
+            using (IDataReader reader = database.ExecuteReader("GetProductsViewed", id))
             {
-                if (reader.Read())
-                {
-                    return GetProduct(reader);
-                }
-                return null;
+                return GetProducts(reader);
             }
-        }*/
+        }
+
     }
 }
